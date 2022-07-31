@@ -1,0 +1,472 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/*Header*/
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  box-shadow: 1px 1px 8px;
+  height: 60px;
+  justify-content: space-between;
+  background-color: #fff;
+  z-index: 1000;
+}
+
+.logo {
+  width: 175px;
+  padding-left: 100px;
+}
+
+.navlist {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-right: 110px;
+}
+
+.navlist a {
+  color: #bb0000;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 19px;
+}
+
+.navlist a:hover {
+  color: #ffff;
+  background: #BB0000;
+}
+
+/*Slogan*/
+
+.slogan {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  z-index: 1;
+  gap: 100px;
+}
+
+.texto_menor {
+  font-size: 18px;
+  font-style: italic;
+}
+
+.texto_maior {
+  font-size: 26px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.texto_maior2 {
+  font-size: 45px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.slogan span {
+  background: linear-gradient(270deg, #A10000 80.59%, rgba(161, 0, 0, 0) 100%);
+  padding-left: 30px;
+  padding-right: 10px;
+  border-radius: 0px 25px 0px 0px;
+  color: white;
+}
+
+p {
+  margin: 0;
+}
+
+.texto {
+  padding-top: 200px;
+  width: 550px;
+}
+
+.texto p{
+  padding-left: 20px;
+}
+
+.capivara_preta img {
+  height: 450px;
+  padding-top: 50px;
+  padding-right: 100px;
+  transform: rotateY(180deg);
+}
+
+/*Nossa História*/
+
+.nossa_historia {
+  margin-bottom: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.titulo {
+  background-color: white;
+  color: #bb0000;
+  padding: 7px;
+  box-shadow: 1px 1px 8px;
+  border-radius: 10px;
+  width: 325px;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translate(-110%,+50%);
+}
+
+.titulonossahistoria {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.textonossahistoria {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #bb0000;
+  color: white;
+  border-radius: 10px;
+  width: 1140px;
+  padding: 30px;
+}
+
+b {
+  font-size: 22px;
+}
+
+/*Feedback*/
+
+.feedback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+}
+
+.botaocursos {
+  text-align: center;
+  width: 500px;
+}
+
+.botaocursos h2 {
+  color: #7b0000;
+  margin-bottom: 15px;
+  font-size: 38px;
+}
+
+.botaocursos span {
+  font-size: 30px;
+}
+
+.botaocursos a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #bb0000;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 22px;
+}
+
+.botaocursos a:hover {
+  background-color: #7b0000;
+}
+
+.alunos {
+  width: 500px;
+}
+
+.alunos h2 {
+  background: linear-gradient(90deg, #BB0000 82%, rgba(187, 0, 0, 0) 100%);
+  color: #fff;
+  margin-bottom: 15px;
+  padding-left: 10px;
+}
+
+.aluno1,.aluno2,.aluno3,.aluno4,.aluno5 {
+  text-align: center;
+  background: rgb(230, 230, 230);
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.aluno1,.aluno2,.aluno3,.aluno4,.aluno5 {
+  filter: blur(1px);
+  opacity: 0.25;
+  transition-duration: 300ms;
+}
+
+
+.aluno1:hover,.aluno2:hover,.aluno3:hover,.aluno4:hover,.aluno5:hover {
+  background-color: white;
+  opacity: 1;
+  box-shadow: 1px 1px 8px;
+  position:relative;
+  z-index: 10;
+  filter:blur(0px);
+}
+
+.aluno1,
+.aluno3,
+.aluno5 {
+  margin-right: 10px;
+}
+
+.aluno2,
+.aluno4 {
+  margin-left: 10px;
+}
+
+.alunos h3 {
+  color: #bb0000;
+}
+
+/*Deslocar os boxes dos feedbacks*/
+
+.aluno2 {
+  transform: translatey(-15%)
+}
+
+.aluno3 {
+  transform: translatey(-30%)
+}
+
+.aluno4 {
+  transform: translatey(-45%)
+}
+
+.aluno5 {
+  transform: translatey(-68%)
+}
+
+
+/*Redes e endereço*/
+
+
+.midiaelocal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:flex-end;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+    /*Esquerda*/
+
+.redessociais {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.upblock {
+  width: 550px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tituloredessociais{
+  color: #bb0000;
+  background-color: #fff;
+  box-shadow: 1px 1px 8px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px 5px 5px 5px;
+  margin: 0 auto;
+  transform: translateY(+50%);
+
+}
+
+.icones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #bb0000;
+  border-radius: 30px;
+  height: 181px;
+}
+
+.icones a {
+  text-decoration: none;
+  color: #fff;
+  /*provisorio falta por as imagens*/
+}
+
+.icones img {
+  margin-top: 21px;
+  height: 100px;
+}
+
+.endereco {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:10px;
+  align-items: flex-start;
+  width: 600px;
+  height:250px;
+  background-color: #bb0000;
+  border-radius: 30px 0px 0px 20px;
+  color:white;
+}
+
+.endereco1{
+  padding-left: 50px;
+  font-size:30px;
+}
+
+.endereco2{
+  padding-left: 50px;
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+    /*Direita*/
+
+.localizacao {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mapa {
+  height: 481px;
+  width: 600px;
+  background-color: #bb0000;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px 30px 30px 0px;
+}
+
+.mapa button {
+  margin-top: 21px;
+}
+
+.titulomapa {
+  color: #bb0000;
+  background-color: #fff;
+  box-shadow: 1px 1px 8px;
+  border-radius: 10px;
+  text-align: center;
+  transform: translateY(+50%);
+  padding: 5px 5px 5px 5px;
+  margin: 0 auto;
+}
+
+/*Fale Conosco*/
+
+.contato {
+  display: flex;
+  gap: 200px;
+  justify-content: center;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.mensagem{
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.fale_conosco{
+  width: 600px;
+}
+
+.inputs {
+  background-color: #fff;
+  box-shadow: 1px 1px 8px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 310px;
+  padding-top: 30px;
+}
+
+.envie {
+  transform: translatey(+50%);
+  margin: 0 auto;
+  width: 300px;
+  text-align: center;
+}
+
+.fale_conosco h2 {
+  color: #7b0000;
+}
+
+.mensagem h2 {
+  color: #fff;
+  background-color: #bb0000;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.fale_conosco h2 {
+  margin-bottom: 10px;
+}
+
+.fale_conosco img {
+  width: 180px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.fale_conosco .img2 {
+  width: 206px;
+  padding-bottom: 3px;
+}
+
+.mensagem button {
+  padding: 10px;
+  background-color: #bb0000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  width: 100px;
+}
+
+.mensagem button:hover {
+  background-color: #7b0000;
+  cursor: pointer;
+}
+
+.inputs input, textarea {
+  border: none;
+  outline: 0;
+}
+
+/*Footer*/
+
+footer {
+  background-color: #bb0000;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 15vh;
+  gap: 5px;
+}
+
+
+
+/*Transitions do Feedback*/
+
+

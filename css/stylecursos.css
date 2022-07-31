@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/*Header*/
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  box-shadow: 1px 1px 8px;
+  height: 60px;
+  justify-content: space-between;
+  background-color: #fff;
+  z-index: 1000;
+}
+
+.logo {
+  width: 175px;
+  padding-left: 100px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-right: 110px;
+}
+
+.menu-nav a {
+  color: #bb0000;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 19px;
+}
+
+
+.menu-nav a:hover {
+  color: #ffff;
+  background-color: #bb0000;
+}
+
+/*Nossos cursos*/
+
+.imagens {
+  background-color: #fff;
+  box-shadow: 1px 1px 8px;
+  width: 820px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
+.nossoscursos {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  margin-top: 100px;
+}
+
+.Anossoscursos {
+  z-index: 1;
+  position:absolute;
+  top: 160px;
+  left: 50%;
+  right: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.imagens img {
+  width: 160px;
+}
+
+.titulocursos {
+  color: #fff;
+  background-color: #bb0000;
+  width: 210px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 2px;
+  transform: translate(-130%,+50%);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Atitulocursos {
+  color: #fff;
+  background-color: #bb0000;
+  width: 210px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 2px;
+  transform: translate(-180%,+50%);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Intrumentos*/
+
+.instrumento {
+  background-color: #fff;
+  box-shadow: 1px 1px 8px;
+  width: 820px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+}
+
+.instrumento img {
+  width: 160px;
+}
+
+/*Função hide*/
+
+#hideviolao, #hidepercussao, #hideguitarra, #hidecanto, #hidecontrabaixo {
+  display: none;
+}
+
+/*Sobre os Cursos*/
+
+.sobrecursos {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+b {
+  font-size: 22px;
+}
+
+.titulosobre {
+  background-color: #fff;
+  color: #bb0000;
+  box-shadow: 1px 1px 8px;
+  border-radius: 10px;
+  width: 230px;
+  text-align: center;
+  padding: 2px;
+  transform: translate(-115%,+50%);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.textosobre {
+  background-color: #bb0000;
+  color: #fff;
+  border-radius: 10px;
+  width: 768px;
+  padding: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 90px;
+}
+
+.imgatributos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  transform: translate(0,-50%);
+  gap:20px;
+  
+}
+
+.imgatributos img {
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+  width: 165px;
+}
+
+.imgatributos img:hover {
+  transform:scale(110%);
+}
+
+/*Footer*/
+
+footer {
+  background-color: #bb0000;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 15vh;
+  gap: 5px;
+}
